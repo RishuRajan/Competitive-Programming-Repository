@@ -1,0 +1,36 @@
+//Seating Arrangement Question of Basic Input Output section
+#include<stdio.h>
+int main()
+{
+    int n,t;//HERE T IS NUMBER OF TEST CASES,N IS HOW MANY SEAT NUMBER TO BE INPUTED BY USER,R IS BASICALLY THE REMAINDER OF SEAT WHICH IS USED TO FORM OPPOSITE SEAT NUMBER OF INPUTED SEAT
+    scanf("%d",&t);
+    while(t--)
+    {
+      scanf("%d",&n);
+     if(n%12==0)
+        printf("%d WS\n",n-11);
+     if(n%12==1)
+        printf("%d WS\n",n+11);
+     if(n%12==2)
+        printf("%d MS\n",n+9);
+    if(n%12==3)
+        printf("%d AS\n",n+7);
+    if(n%12==4)
+        printf("%d AS\n",n+5);
+    if(n%12==5)
+        printf("%d MS\n",n+3) ;  
+    if(n%12==6)
+         printf("%d WS\n",n+1);
+    if(n%12==7)
+        printf("%d WS\n",n-1);
+    if(n%12==8)
+        printf("%d MS\n",n-3);
+    if(n%12==9)
+        printf("%d AS\n",n-5);    
+    if(n%12==10)
+        printf("%d AS\n",n-7);
+    if(n%12==11)
+      printf("%d MS\n",n-9);
+    }
+    return 0;
+}
